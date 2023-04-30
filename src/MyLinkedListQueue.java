@@ -17,5 +17,8 @@ public class MyLinkedListQueue<E> {
     public Object peek(){
         return list.getFirst();
     }
+    public int size(){
+        return list.size();
+    }
 
 }
