@@ -10,12 +10,16 @@ public class MyLinkedListQueue<E> {
         list.addLast(element);
     }
     public Object dequeue(){
+        if (list.isEmpty()) throw new NoSuchElementException();
+        else {
         Object el = list.getFirst();
         list.removeLast();
-        return el;
+        return el;}
     }
     public Object peek(){
-        return list.getFirst();
+        if (list.isEmpty()) throw new NoSuchElementException();
+        else {
+        return list.getFirst();}
     }
     public int size(){
         return list.size();
