@@ -20,4 +20,8 @@ public class MyLinkedListStack<E>{
     public int size(){
         return list.size();
     }
+    public boolean isEmpty(){
+        if (list.size() == 0) return true;
+        else return false;
+    }
 }
