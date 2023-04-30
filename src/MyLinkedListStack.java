@@ -1,4 +1,3 @@
-import java.util.EmptyStackException;
 import java.util.LinkedList;
 public class MyLinkedListStack<E>{
     private LinkedList<E> list;
@@ -10,5 +9,10 @@ public class MyLinkedListStack<E>{
         list.addFirst(element);
     }
 
+    public Object pop(){
+        Object el = list.getFirst();
+        list.removeFirst();
+        return el;
+    }
 
 }
