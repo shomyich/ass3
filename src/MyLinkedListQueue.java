@@ -9,5 +9,10 @@ public class MyLinkedListQueue<E> {
     public void enqueue(E element){
         list.addLast(element);
     }
+    public Object dequeue(){
+        Object el = list.getFirst();
+        list.removeLast();
+        return el;
+    }
 
 }
